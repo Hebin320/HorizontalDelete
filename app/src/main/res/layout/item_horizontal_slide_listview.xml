@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <!-- 这里因为父布局是HorizontalScrollView,所以宽度写match_parent不会生效-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 这里的宽度之后会在代码里面动态改变 -->
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FF0000"
+            android:text="删除"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+</HorizontalScrollView>
