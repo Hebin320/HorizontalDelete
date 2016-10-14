@@ -128,7 +128,7 @@ public class HorizontalSlideAdapter extends ArrayAdapter<String> {
                     break;
                 case MotionEvent.ACTION_UP:
                     HorizontalScrollView view = (HorizontalScrollView) v;
-                    // 如果滑动了>100个像素,就显示出删除按钮
+                    // 如果滑动了>100个像素,就显示出删除按钮 ,<100则隐藏删除按钮；如果没有移动，则执行点击事件
                     if (startX == event.getX()) {
                         ViewHolder holder = (ViewHolder) v.getTag();
                         int k = holder.position + 1;
