@@ -1,5 +1,9 @@
 # HorizontalDelete
 
+This is a custom view through the QQ to achieve a similar list of deleted sideslip.
+
+The effect chart is as follows
+
 ![image](https://github.com/Hebin320/ImageSave/blob/master/img/del_01.gif)
 
 
